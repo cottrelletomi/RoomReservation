@@ -1,0 +1,44 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.3.15'
+    }
+}
+
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+plugins {
+    id 'com.android.application' version '7.2.1' apply false
+    id 'com.android.library' version '7.2.1' apply false
+    id 'org.jetbrains.kotlin.android' version '1.7.10' apply false
+}
+
+/*allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}*/
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    coreVersion = '1.7.0'
+    appCompatVersion = '1.3.0'
+    retrofitVersion = '2.9.0'
+    roomVersion = '2.4.3'
+    //coroutines = '1.3.9'
+    lifecycleVersion = '2.2.0'
+    materialVersion = '1.4.0'
+    constraintLayoutVersion = '2.0.4'
+    navigationVersion = '2.5.2'
+
+    // testing
+    //junitVersion = '4.13.2'
+    //espressoVersion = '3.4.0'
+    //androidxJunitVersion = '1.1.3'
+}

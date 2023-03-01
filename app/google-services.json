@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "305101112037",
+    "firebase_url": "https://episenpds-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "episenpds",
+    "storage_bucket": "episenpds.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:305101112037:android:176a9c7756c99aa54b8a0c",
+        "android_client_info": {
+          "package_name": "com.example.roomreservation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "305101112037-sepolr3ocipr1u0pevosdpb88mra8vfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBL-175BbZVACATyL7PbvMSm17QPFCMZVQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "305101112037-sepolr3ocipr1u0pevosdpb88mra8vfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

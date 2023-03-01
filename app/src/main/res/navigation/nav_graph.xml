@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/listRoomFragment"
+        android:name="com.example.roomreservation.view.ListRoomFragment"
+        android:label="fragment_list_room"
+        tools:layout="@layout/fragment_list_room" >
+        <action
+            android:id="@+id/action_listRoomFragment_to_roomReservationFragment"
+            app:destination="@id/roomReservationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/roomReservationFragment"
+        android:name="com.example.roomreservation.view.RoomReservationFragment"
+        android:label="fragment_room_reservation"
+        tools:layout="@layout/fragment_room_reservation" />
+    <fragment
+        android:id="@+id/listReservationFragment"
+        android:name="com.example.roomreservation.view.ListReservationFragment"
+        android:label="fragment_list_reservation"
+        tools:layout="@layout/fragment_list_reservation" />
+    <action android:id="@+id/action_global_listReservationFragment" app:destination="@id/listReservationFragment" />
+    <action android:id="@+id/action_global_listRoomFragment" app:destination="@id/listRoomFragment" />
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.roomreservation.view.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <action android:id="@+id/action_global_loginFragment" app:destination="@id/loginFragment" />
+    <fragment
+        android:id="@+id/fingerPrintFragment"
+        android:name="com.example.roomreservation.view.FingerPrintFragment"
+        android:label="fragment_finger_print"
+        tools:layout="@layout/fragment_finger_print" >
+        <action
+            android:id="@+id/action_fingerPrintFragment_to_listRoomFragment"
+            app:destination="@id/listRoomFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_fingerPrintFragment" app:destination="@id/fingerPrintFragment" />
+    <fragment
+        android:id="@+id/enrollFragment"
+        android:name="com.example.roomreservation.view.EnrollFragment"
+        android:label="fragment_enroll"
+        tools:layout="@layout/fragment_enroll" >
+        <action
+            android:id="@+id/action_enrollFragment_to_listRoomFragment"
+            app:destination="@id/listRoomFragment" />
+    </fragment>
+    <action android:id="@+id/action_global_enrollFragment" app:destination="@id/enrollFragment" />
+</navigation>
